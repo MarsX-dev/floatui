@@ -1,3 +1,4 @@
+import Features from "@/components/ui/Features";
 import Hero from "@/components/ui/Hero";
 import Navbar from "@/components/ui/Navbar";
 import Head from "next/head";
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
+      <Features />
     </main>
   );
 }
