@@ -15,7 +15,7 @@ export default () => (
         </p>
         <div className='flex items-center justify-center gap-x-3 font-medium text-sm'>
           <NavLink
-            href='/'
+            href='/docs'
             className='text-white bg-gray-900 hover:bg-gray-700 shadow-md ring-offset-2 ring-gray-800 focus:ring duration-150'>
             Get started now
           </NavLink>
