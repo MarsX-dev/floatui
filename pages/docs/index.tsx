@@ -1,3 +1,4 @@
+import ComponentLayout from "@/components/ComponentLayout";
 import DocsLayout from "@/components/DocsLayout";
 import Head from "next/head";
 
@@ -11,7 +12,9 @@ export default function Docs() {
           content='Beautiful and responsive UI components and templates for React and Vue with Tailwind CSS.'
         />
       </Head>
-      <DocsLayout>Docs</DocsLayout>
+      <DocsLayout>
+        <ComponentLayout />
+      </DocsLayout>
     </main>
   );
 }

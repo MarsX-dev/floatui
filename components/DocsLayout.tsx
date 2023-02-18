@@ -15,7 +15,7 @@ export default (props: Props) => {
       </div>
       <div className='lg:flex lg:px-8'>
         <Aside />
-        <div className='flex-1 mt-48 px-4 md:px-8 lg:mt-28'>Hello</div>
+        <div className='flex-1 mt-48 px-4 md:px-8 lg:mt-28'>{children}</div>
       </div>
     </main>
   );
