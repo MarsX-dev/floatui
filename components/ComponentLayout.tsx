@@ -1,21 +1,28 @@
+import { Component } from "@/types";
 import { useState } from "react";
 import CodeBlock from "./CodeBlock";
 import PreviewCodeHandler from "./ui/PreviewCodeHandler";
 import Viewport from "./Viewport";
 
-export default () => {
+type Props = {
+  component?: Component;
+};
+
+export default ({ component }: Props) => {
   const [isPreview, setPreview] = useState<boolean>(true);
   return (
     <>
       <div className='flex flex-wrap items-center gap-6 justify-between'>
-        <h2 className='text-gray-800 font-medium'>Primary Newsletter</h2>
+        <h2 className='text-gray-800 text-sm font-medium'>
+          {component?.title}
+        </h2>
         <PreviewCodeHandler isPreview={isPreview} setPreview={setPreview} />
       </div>
       <div className='mt-4'>
         {isPreview ? (
-          <Viewport />
+          <Viewport component={component} />
         ) : (
-          <CodeBlock>var i = 0; console.log('Hello')</CodeBlock>
+          <CodeBlock>{component?.ltr?.react?.jsxTail[0].code}</CodeBlock>
         )}
       </div>
     </>

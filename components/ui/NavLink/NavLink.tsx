@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 const NavLink = ({ ...props }) => {
   const {
@@ -15,10 +14,14 @@ const NavLink = ({ ...props }) => {
     active?: string;
   } = props;
 
-  const { asPath } = useRouter();
+  const [pathname, setPathname] = useState<string>("/");
 
-  const isActive: boolean = asPath == href;
+  const isActive: boolean = pathname == href;
   const activeClass = isActive ? active : "";
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, [props]);
 
   return (
     <Link

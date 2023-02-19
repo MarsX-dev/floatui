@@ -14,7 +14,7 @@ export default () => {
   }, []);
 
   return (
-    <div className='flex-none fixed z-20 top-16 w-full lg:relative lg:max-w-[16rem] lg:top-0'>
+    <div className='flex-none fixed z-50 top-16 w-full lg:relative lg:max-w-[16rem] lg:top-0'>
       <div className='py-4 px-4 bg-white border-y md:px-8 lg:hidden'>
         <button
           className='flex gap-x-2 items-center text-gray-800'
