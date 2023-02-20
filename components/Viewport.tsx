@@ -8,6 +8,7 @@ import React, {
   useState,
   useRef,
 } from "react";
+import ComponentDir from "./ComponentDir";
 
 const template: string = `
 <!DOCTYPE html>
@@ -28,12 +29,20 @@ const template: string = `
 </html>
 `;
 
-export default ({ component }: { component: Component | undefined }) => {
+export default ({
+  component,
+  dir,
+}: {
+  component: Component | undefined;
+  dir: string;
+}) => {
   const containerRef = useRef<HTMLIFrameElement>(null);
   const [previewComponent, setPreviewComponent] = useState<ReactNode>();
 
+  const componentDir = dir == "ltr" ? "ltr" : "rtl";
+
   useEffect(() => {
-    const code = component?.ltr.preview;
+    const code = component?.[componentDir].preview;
     const modules: string[] = [
       "React",
       "useState",
@@ -48,14 +57,19 @@ export default ({ component }: { component: Component | undefined }) => {
     const iframeEl = containerRef.current as HTMLIFrameElement | any;
     setTimeout(() => {
       setPreviewComponent(
-        createPortal(<App />, iframeEl.contentWindow.document.body)
+        createPortal(
+          <ComponentDir dir={componentDir}>
+            <App />
+          </ComponentDir>,
+          iframeEl.contentWindow.document.body
+        )
       );
     }, 300);
 
     setInterval(() => {
       handleIframeHeight();
     }, 100);
-  }, [component]);
+  }, [component, componentDir]);
 
   const handleIframeHeight = () => {
     const iframeEl = containerRef.current as HTMLIFrameElement;

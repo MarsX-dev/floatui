@@ -2,6 +2,7 @@ import { IconBar, IconXMark } from "@/components/icons";
 import sections from "@/json/sections.json";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import ComponentsDirHandler from "../ComponentsDirHandler";
 import NavLink from "../NavLink";
 
 export default () => {
@@ -28,11 +29,14 @@ export default () => {
           className={`fixed w-full h-full bg-white lg:block lg:max-w-[16rem] lg:top-auto ${
             isOpen ? "" : "hidden"
           }`}>
-          <ul className='h-full overflow-y-auto space-y-px pb-32 text-gray-700 pt-6 lg:pb-28'>
+          <ul className='h-full overflow-y-auto space-y-px pb-32 text-gray-700 text-[.9rem] pt-6 lg:pb-28'>
+            <li>
+              <ComponentsDirHandler />
+            </li>
             <li>
               <NavLink
                 href='/docs'
-                className='block text-[.9rem] rounded-lg hover:bg-gray-50'
+                className='block rounded-lg hover:bg-gray-50'
                 active='bg-gray-50 text-gray-800 font-medium'>
                 Introduction
               </NavLink>
@@ -41,7 +45,7 @@ export default () => {
               <li key={idx}>
                 <NavLink
                   href={`/docs${item.slug}`}
-                  className='block text-[.9rem] rounded-lg hover:bg-gray-50'
+                  className='block rounded-lg hover:bg-gray-50'
                   active='bg-gray-50 text-gray-800 font-medium'>
                   {item.section_name}
                 </NavLink>

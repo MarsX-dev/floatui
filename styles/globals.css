@@ -5,7 +5,3 @@
 .custom-screen {
     @apply max-w-screen-xl mx-auto px-4 md:px-8;
 }
-
-.ar-font {
-    font-family: 'Tajawal', sans-serif;
-}

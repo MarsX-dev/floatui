@@ -3,6 +3,7 @@ import { useState } from "react";
 import CodeBlock from "./CodeBlock";
 import PreviewCodeHandler from "./ui/PreviewCodeHandler";
 import Viewport from "./Viewport";
+import { useAppContext } from "@/context/contextApp";
 
 type Props = {
   component?: Component;
@@ -10,6 +11,9 @@ type Props = {
 
 export default ({ component }: Props) => {
   const [isPreview, setPreview] = useState<boolean>(true);
+
+  const { dir } = useAppContext();
+  const componentDir = dir == "ltr" ? "ltr" : "rtl";
   return (
     <>
       <div className='flex flex-wrap items-center gap-6 justify-between'>
@@ -20,9 +24,11 @@ export default ({ component }: Props) => {
       </div>
       <div className='mt-4'>
         {isPreview ? (
-          <Viewport component={component} />
+          <Viewport dir={componentDir} component={component} />
         ) : (
-          <CodeBlock>{component?.ltr?.react?.jsxTail[0].code}</CodeBlock>
+          <CodeBlock>
+            {component?.[componentDir]?.react?.jsxTail[0].code}
+          </CodeBlock>
         )}
       </div>
     </>
