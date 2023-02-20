@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="https://floatui.com/" rel="noopener" target="_blank"><img width="200" src="public/logo.svg" alt="Float UI logo"></a>
-</p>
+# Whta is Float UI?
 
 Float UI is collection of modern UI components and website templates built on top of React, and Vue (soon) with Tailwind CSS, the components are beautiful designed, expertly crafted, allow you to build beautiful websites.
 
