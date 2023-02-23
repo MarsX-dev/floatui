@@ -1,4 +1,4 @@
-MIT License Copyright (c) Float UI
+MIT License Copyright (c) Float UI.
 
 With this license, you are granted permission to:
 
@@ -26,8 +26,6 @@ for the distribution of the Components and Templates or derivative Components or
 Additionally, creating and distributing themes, templates, or project starter kits using the Components or Templates is not allowed under this license.
 
 <strong>Note</strong>: you can't use this project to create your own UI library
-
-- A Team License allows a group of users to access and use the website's features and services. This type of license is ideal for teams or organizations that need to collaborate on projects, The license grants permission for up to 33 Employees.
 
 <p>
   Have a question? Feel free to
