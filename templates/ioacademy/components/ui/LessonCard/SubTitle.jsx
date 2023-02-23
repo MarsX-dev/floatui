@@ -1,0 +1,1 @@
+export const SubTitle = ({ children, className }) => <span className={`${className || ""} text-blue-600 dark:text-sky-500 font-semibold`}>{children}</span>

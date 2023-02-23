@@ -1,0 +1,50 @@
+[
+    {
+        "thumbnail": "/thumbnails/intro.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1673211729/cs50_h7vvpl.3gp",
+        "title": "Introduction to computer science",
+        "description": "We will be discussing the  important subjects  within  the scope  of  computer  science.",
+        "duration": "25:45",
+        "slug": "introduction-to-computer-science"
+    },
+    {
+        "thumbnail": "/thumbnails/datastructures.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1669411003/Binary_Search_Algorithm_in_100_Seconds_hyg6n5.mp4",
+        "title": "Data Structures and Algorithms",
+        "description": "We will cover fundamental concepts pertaining to memory, complexity analysis, and more.",
+        "duration": "5:00:45",
+        "slug": "data-structures-and-algorithms"
+    },
+    {
+        "thumbnail": "/thumbnails/databases.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1673211729/cs50_h7vvpl.3gp",
+        "title": "Sql and NoSql Databases",
+        "description": "In this video we will learn the difference between SQL, and NoSQL, and how to deal with both of them.",
+        "duration": "3:20:45",
+        "slug": "sql-and-nosql-databases"
+    },
+    {
+        "thumbnail": "/thumbnails/computerarchitecture.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1673211729/cs50_h7vvpl.3gp",
+        "title": "Computer Architecture",
+        "description": "You will how learn to design the computer architecture of complex modern microprocessors.",
+        "duration": "1:12:29",
+        "slug": "computer-architecture"
+    },
+    {
+        "thumbnail": "/thumbnails/discretemath.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1673211729/cs50_h7vvpl.3gp",
+        "title": "Discrete Math",
+        "description": "What is discrete mathematics, and what are the main concepts of discrete mathematics ..etc.",
+        "duration": "1:45:30",
+        "slug": "discrete-math"
+    },
+    {
+        "thumbnail": "/thumbnails/javaScript.png",
+        "lesson": "https://res.cloudinary.com/floatui/video/upload/v1673211729/cs50_h7vvpl.3gp",
+        "title": "JavaScript programming language",
+        "description": "We wil cover the basic of JavaScript, and how it’s works, and you will learn OOP.",
+        "duration": "4:30:00",
+        "slug": "javascript-programming-language"
+    }
+]
