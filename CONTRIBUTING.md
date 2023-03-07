@@ -14,12 +14,16 @@ Good pull requests patches, improvements, new features, components, website temp
 help. They should remain focused in scope and avoid containing unrelated
 commits.
 
-- **UI components:** you can improve, or fix a bug in an existing component, and to add a new component, please make sure it's unique, modern, responsive, and not duplicated, or taken from another platform, here are few steps you can follow to submit your component:<br />
+- **UI components:** you can improve, or fix a bug in an existing component, and to add a new component, please make sure it's unique, modern, responsive, and not duplicated, or taken from another platform, here are few steps you can follow to submit your component:
+  <br />
   1 - Enter this directory "UIcomponents/LTR".<br />
-  2 - Enter the component section you want to add your component to, for example: "UIcomponents/LTR/heroes". <br />
+  2 - Enter the component section you want to add your component to, for example: "UIcomponents/LTR/heroes".
+  <br />
   3 - Create component file and add your code for example "UIcomponents/LTR/heroes/HeroWithLargeImage.jsx" and create a pull request.
 
 - **Website templates:** you can improve, or fix a bug in an existing template, and to submit a new template, please make sure it's unique, modern, responsive, not duplicated, or taken from another platform, and follow best practices, here are few steps you can follow to submit your template:
-  1 - Create your template using Nextjs and use best practices. <br />
-  2 - Push your code to Github. <br />
+  1 - Create your template using Nextjs and use best practices.
+  <br />
+  2 - Push your code to Github.
+  <br />
   3 - Deploy your template on Vercel and open a new Feature request.
