@@ -11,7 +11,7 @@ export default () => {
         </Link>
         <div className='flex gap-x-6 items-center'>
           <a
-            href=''
+            href='https://github.com/MarsX-dev/floatui'
             target='_blank'
             className='text-gray-600 hover:text-gray-800 duration-150'>
             <IconGithub />
