@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-screen {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.custom-btn-bg {
+    background: radial-gradient(67.5% 67.5% at 50% 50%, #4B5563 0%, rgba(75, 85, 99, 0) 100%)
+}
+
+.custom-btn-bg:hover {
+    background: radial-gradient(118.75% 118.75% at 50% 50%, #4B5563 0%, rgba(75, 85, 99, 0) 100%);
+}
