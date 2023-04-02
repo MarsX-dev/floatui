@@ -14,8 +14,8 @@ export const PageWithIcon = () => {
             />
 
             {/* 404 */}
-            <h1 className="text-center font-medium md:text-4xl text-3xl text-indigo-600 ">
-              404 Error:
+            <h1 className="text-center font-semibold md:text-4xl text-3xl text-indigo-600 ">
+              404 Error
             </h1>
 
             {/* 404 message */}
@@ -24,11 +24,10 @@ export const PageWithIcon = () => {
             </p>
             {/* return button */}
             <div className="flex items-center justify-center">
-              <a
-                href="#"
-                className="flex mt-6 border px-5 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-500 hover:shadow-md"
-              >
-                Back to home
+             
+              <a href="javascript:void(0)" className="flex mt-4 py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg">
+                            Go back
+                       
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="ml-4 h-6 w-6 transition-transform group-hover:translate-x-2"
