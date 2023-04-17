@@ -64,7 +64,7 @@ export default () => {
                             </li>
                             <li>
                                 <a href="javascript:void(0)" className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
-                                    Sign in
+                                    Sign up
                                 </a>
                             </li>
                         </div>
