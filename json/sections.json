@@ -250,5 +250,14 @@
     "cover_url": "Authentication.png",
     "description": "Beautifully designed, fully responsive, expertly crafted authentication examples",
     "count": 7
+  },
+    {
+    "category": "Application",
+    "slug": "/sidebars",
+    "section_name": "Sidebars",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c32457d",
+    "cover_url": "Sidebar.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted sidebar examples",
+    "count": 4
   }
 ]
