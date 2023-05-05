@@ -1,33 +1,5 @@
 import { Component } from "@/types";
-import { createPortal } from "react-dom";
-import React, {
-  ReactNode,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-  useRef,
-} from "react";
-import ComponentDir from "./ComponentDir";
-
-const template: string = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/tailwind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet" />
-    <title>Document</title>
-</head>
-<body class="body">
-
-</body>
-</html>
-`;
+import React, { useEffect, useState, useRef } from "react";
 
 export default ({
   component,
@@ -37,54 +9,59 @@ export default ({
   dir: string;
 }) => {
   const containerRef = useRef<HTMLIFrameElement>(null);
-  const [previewComponent, setPreviewComponent] = useState<ReactNode>();
+  const [previewComponent, setPreviewComponent] = useState<string>();
 
   const componentDir = dir == "ltr" ? "ltr" : "rtl";
 
   useEffect(() => {
     const code = component?.[componentDir].preview;
-    const modules: string[] = [
-      "React",
-      "useState",
-      "useEffect",
-      "useCallback",
-      "useMemo",
-      "useRef",
-    ];
 
-    const func = new Function(...modules, `return ${code}`);
-    const App = func(React, useState, useEffect, useCallback, useMemo, useRef);
-    const iframeEl = containerRef.current as HTMLIFrameElement | any;
-    setTimeout(() => {
-      setPreviewComponent(
-        createPortal(
-          <ComponentDir dir={componentDir}>
-            <App />
-          </ComponentDir>,
-          iframeEl.contentWindow.document.body
-        )
-      );
-    }, 300);
+    const temp = `
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel="preconnect" href="https://fonts.googleapis.com" />
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+              <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet" />
+              <link rel="stylesheet" href="/tailwind.css" />
+              <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+              <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+              <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+              <title>Document</title>
+          </head>
+          <body class="body ${dir == "rtl" ? "ar-font" : ""}" dir="${dir}">
+            <div id="app"></div>
 
+            <script crossorigin data-type="module" data-plugins="" data-presets="react, env" type="text/babel">
+                ${code}
+                ReactDOM.render(<App />, document.getElementById('app'))
+            </script>
+          </body>
+          </html>
+          `;
+    setPreviewComponent(temp);
     setInterval(() => {
       handleIframeHeight();
     }, 100);
+
+    window.onresize = () => handleIframeHeight();
   }, [component, componentDir]);
 
   const handleIframeHeight = () => {
     const iframeEl = containerRef.current as HTMLIFrameElement;
-    if (iframeEl) {
-      const iframeHeight = iframeEl?.contentWindow?.document.body.offsetHeight;
-      iframeEl.style.height = `${Number(iframeHeight) + 12}px`;
-    }
+    const iframeHeight = iframeEl?.contentWindow?.document?.body?.scrollHeight;
+    if (iframeEl && iframeEl.style) iframeEl.style.height = `${iframeHeight}px`;
   };
 
   return (
-    <iframe
-      ref={containerRef}
-      srcDoc={template}
-      className='w-full min-h-[300px] appearance-none border rounded-xl overflow-hidden'>
-      {previewComponent}
-    </iframe>
+    <div className='w-full overflow-hidden border dark:border-gray-700 rounded-xl'>
+      <iframe
+        ref={containerRef}
+        srcDoc={previewComponent}
+        className='w-full min-h-[300px] appearance-none p-0 m-0'></iframe>
+    </div>
   );
 };

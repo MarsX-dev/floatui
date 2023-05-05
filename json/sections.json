@@ -260,7 +260,7 @@
     "description": "Beautifully designed, fully responsive, expertly crafted sidebar examples",
     "count": 4
   },
-      {
+  {
     "category": "Application",
     "slug": "/radio-groups",
     "section_name": "Radio Groups",
@@ -268,5 +268,14 @@
     "cover_url": "Radio.png",
     "description": "Beautifully designed, fully responsive, expertly crafted Radio Groups examples",
     "count": 4
+  },
+  {
+    "category": "Application",
+    "slug": "/context-menus",
+    "section_name": "Context Menu",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c32457d",
+    "cover_url": "Context-menu.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted Context Menu examples",
+    "count": 2
   }
 ]
