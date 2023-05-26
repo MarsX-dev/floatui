@@ -113,7 +113,7 @@ const Sidebar = () => {
         <>
             <nav
                 className="fixed top-0 left-0 w-full h-full border-r bg-white space-y-8 sm:w-80">
-                <div class="flex flex-col h-full px-4">
+                <div className="flex flex-col h-full px-4">
                     <div className='h-20 flex items-center pl-2'>
                         <div className="w-full flex items-center gap-x-4">
                             <img src="https://randomuser.me/api/portraits/women/79.jpg" className="w-10 h-10 rounded-full" />

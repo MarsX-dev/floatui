@@ -22,7 +22,7 @@ export default () => {
                     radios.map((item, idx) => (
                         <li key={idx}>
                             <label htmlFor={item.name} className="block relative">
-                                <input id={item.name} type="radio" defaultChecked={idx == 1 ? true : false} name="payment" class="sr-only peer" />
+                                <input id={item.name} type="radio" defaultChecked={idx == 1 ? true : false} name="payment" className="sr-only peer" />
                                 <div className="w-full p-5 cursor-pointer rounded-lg border bg-white shadow-sm ring-indigo-600 peer-checked:ring-2 duration-200">
                                     <div className="pl-7">
                                         <h3 className="leading-none text-gray-800 font-medium">

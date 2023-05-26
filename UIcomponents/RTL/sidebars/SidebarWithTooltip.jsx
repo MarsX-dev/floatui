@@ -80,7 +80,7 @@ const Sidebar = () => {
         <>
             <nav
                 className="fixed top-0 right-0 w-20 h-full border-l bg-white space-y-8">
-                <div class="flex flex-col h-full">
+                <div className="flex flex-col h-full">
                     <div className='h-20 flex items-center justify-center px-8'>
                         <a href='javascript:void(0)' className='flex-none'>
                             <img src="https://floatui.com/logo-letter.png" width={35} className="mx-auto" />
