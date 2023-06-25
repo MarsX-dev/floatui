@@ -1,4 +1,7 @@
 {
   "extends": "next/core-web-vitals",
-  "react/display-name": [2, { "ignoreTranspilerName":true }]
+  "rules": {
+    "react/display-name": [0],
+    "import/no-anonymous-default-export": [0]
+  }
 }
