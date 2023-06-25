@@ -45,7 +45,8 @@ export default () => (
             <a
               href={item.href}
               target='_blank'
-              className='block group space-y-3 p-4 rounded-lg border hover:bg-gradient-to-r from-gray-50 to-gray-100 sm:p-6'>
+              className='block group space-y-3 p-4 rounded-lg border hover:bg-gradient-to-r from-gray-50 to-gray-100 sm:p-6' 
+              rel="noreferrer">
               <div>{item.icon}</div>
               <h3 className='flex items-center gap-x-0 group-hover:gap-x-3 text-gray-800 text-xl font-semibold duration-200'>
                 {item.title}

@@ -13,13 +13,15 @@ export default () => {
           <a
             href='https://github.com/MarsX-dev/floatui'
             target='_blank'
-            className='text-gray-600 hover:text-gray-800 duration-150'>
+            className='text-gray-600 hover:text-gray-800 duration-150' 
+            rel="noreferrer">
             <IconGithub />
           </a>
           <a
             href='https://twitter.com/float_ui'
             target='_blank'
-            className='text-gray-600 hover:text-gray-800 duration-150'>
+            className='text-gray-600 hover:text-gray-800 duration-150' 
+            rel="noreferrer">
             <IconTwitter />
           </a>
         </div>
