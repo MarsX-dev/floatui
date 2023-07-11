@@ -7,7 +7,20 @@ Float UI is collection of modern UI components and website templates built on to
 ## Why Float UI?
 
 First, Float UI is fully free, and open source, you don't need to pay anything to use it, and we are working on it full-time, so we'll keep improving, and adding more UIs, the second thing if you’re working on a large project that requires a high level of UI customization or you find yourself repeating the same UI patterns across projects, consider creating an internal UI library, and in this case Float UI is a great choice. You should definitely use it.
+[![HomePage](readme/1.png)](https://floatui.com)
+<br>
 
+### A collection of professional and beautiful ,aesthetic and  modern designed website templates
+[![Templates](readme/2.png)](https://floatui.com/templates)
+<br>
+
+### The User Friendly UI Components
+[![Components](readme/4.png)](https://floatui.com/components)
+<br>
+
+### Demo
+[![Demo](readme/3.png)](https://floatui.com/demo)
+<br>
 ## Getting Started
 
 First, install the dependencies we highly recommend using pnpm, and run the development server:
