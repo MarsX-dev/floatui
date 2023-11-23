@@ -10,17 +10,21 @@ First, Float UI is fully free, and open source, you don't need to pay anything t
 [![HomePage](readme/1.png)](https://floatui.com)
 <br>
 
-### A collection of professional and beautiful ,aesthetic and  modern designed website templates
+### A collection of professional and beautiful ,aesthetic and modern designed website templates
+
 [![Templates](readme/2.png)](https://floatui.com/templates)
 <br>
 
 ### The User Friendly UI Components
+
 [![Components](readme/4.png)](https://floatui.com/components)
 <br>
 
 ### Demo
+
 [![Demo](readme/3.png)](https://floatui.com/demo)
 <br>
+
 ## Getting Started
 
 First, install the dependencies we highly recommend using pnpm, and run the development server:

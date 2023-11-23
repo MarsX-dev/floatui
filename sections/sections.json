@@ -1,0 +1,313 @@
+[
+  {
+    "description": "Beautifully designed, fully responsive, expertly crafted input examples",
+    "section_name": "Inputs",
+    "id": "aff12693-c78a-4a74-89ec-80856ebc770e",
+    "category": "Application",
+    "slug": "/inputs",
+    "cover_url": "Inputs.png",
+    "count": 12,
+    "isNew": false
+  },
+  {
+    "category": "Marketing",
+    "slug": "/banners",
+    "description": "Beautifully designed, fully responsive, expertly crafted banner examples",
+    "count": 5,
+    "cover_url": "Banner.png",
+    "section_name": "Banners",
+    "id": "d3003bc1-fb65-4157-ae76-c460e7ca43d9",
+    "isNew": false
+  },
+  {
+    "cover_url": "CTA-Section.png",
+    "category": "Marketing",
+    "id": "0fb7f422-029c-4eff-914d-cf228942b180",
+    "description": "Beautifully designed, fully responsive, expertly crafted CTA section examples",
+    "slug": "/cta-sections",
+    "count": 9,
+    "section_name": "CTA Sections",
+    "isNew": false
+  },
+  {
+    "description": "Beautifully designed, fully responsive, expertly crafted table examples",
+    "section_name": "Tables",
+    "id": "d9c5c70d-0a0a-4909-89aa-0c66661d3d54",
+    "slug": "/tables",
+    "category": "Application",
+    "count": 8,
+    "cover_url": "Table.png",
+    "isNew": false
+  },
+  {
+    "slug": "/paginations",
+    "cover_url": "Pagination.png",
+    "category": "Application",
+    "description": "Beautifully designed, fully responsive, expertly crafted pagination examples",
+    "count": 4,
+    "section_name": "Paginations",
+    "id": "96d43e68-7723-478f-9e34-d4b914f32f7c",
+    "isNew": false
+  },
+  {
+    "description": "Beautifully designed, fully responsive, expertly crafted card examples",
+    "section_name": "Cards",
+    "cover_url": "Cards.png",
+    "id": "bff425d0-2244-40c9-85de-1483a64fc259",
+    "slug": "/cards",
+    "count": 8,
+    "category": "Application",
+    "isNew": false
+  },
+  {
+    "cover_url": "Team.png",
+    "slug": "/team-sections",
+    "section_name": "Team Sections",
+    "id": "647d4652-e28b-4ef2-95a7-0ce7754288fe",
+    "category": "Marketing",
+    "description": "Beautifully designed, fully responsive, expertly crafted team section examples",
+    "count": 6,
+    "isNew": false
+  },
+  {
+    "id": "0b75f926-490e-4f91-b758-c12b9e5b48d3",
+    "cover_url": "Contact.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted contact section examples",
+    "section_name": "Contact Sections",
+    "count": 6,
+    "category": "Marketing",
+    "slug": "/contact-sections",
+    "isNew": false
+  },
+  {
+    "count": 6,
+    "cover_url": "Footers.png",
+    "slug": "/footers",
+    "section_name": "Footers",
+    "description": "Beautifully designed, fully responsive, expertly crafted footer examples",
+    "category": "Marketing",
+    "id": "72b0c352-089f-49db-a6ab-2464eb2fddbb",
+    "isNew": false
+  },
+  {
+    "category": "Application",
+    "id": "1dd7b9ff-75f4-4f0b-b27f-d8199a321b0c",
+    "cover_url": "Alerts.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted alert examples",
+    "section_name": "Alerts",
+    "count": 10,
+    "slug": "/alerts",
+    "isNew": false
+  },
+  {
+    "category": "Application",
+    "slug": "/section-headers",
+    "id": "e88f50af-d52d-4c7b-ad79-57472225da30",
+    "description": "Beautifully designed, fully responsive, expertly crafted section header examples",
+    "count": 5,
+    "cover_url": "Section-Header.png",
+    "section_name": "Section Headers",
+    "isNew": false
+  },
+  {
+    "section_name": "Steps",
+    "cover_url": "Steps.png",
+    "id": "7bbcd9d1-e328-40fc-a259-dec564be637f",
+    "description": "Beautifully designed, fully responsive, expertly crafted steps examples",
+    "count": 5,
+    "category": "Application",
+    "slug": "/steps",
+    "isNew": false
+  },
+  {
+    "count": 5,
+    "cover_url": "Logo.png",
+    "category": "Marketing",
+    "slug": "/logo-grid",
+    "section_name": "Logo Grid",
+    "description": "Beautifully designed, fully responsive, expertly crafted logo grid examples",
+    "id": "35cf3b43-d1b9-4e7f-948e-c5cc4c4ef21e",
+    "isNew": false
+  },
+  {
+    "description": "Beautifully designed, fully responsive, expertly crafted button examples",
+    "slug": "/buttons",
+    "count": 9,
+    "category": "Application",
+    "section_name": "Buttons",
+    "cover_url": "Buttons.png",
+    "id": "9a60d631-43d7-44ed-96fc-b85a7354bb75",
+    "isNew": false
+  },
+  {
+    "category": "Marketing",
+    "count": 5,
+    "slug": "/404-pages",
+    "description": "Beautifully designed, fully responsive, expertly crafted 404 page examples",
+    "section_name": "404 Pages",
+    "cover_url": "page404.png",
+    "id": "c9239dda-cd5e-4f22-8087-d639aee55222",
+    "isNew": false
+  },
+  {
+    "section_name": "Tabs",
+    "category": "Application",
+    "id": "ee3d8db4-4789-4773-afca-d6f2572588f7",
+    "count": 6,
+    "description": "Beautifully designed, fully responsive, expertly crafted tabs examples",
+    "cover_url": "Tabs.png",
+    "slug": "/tabs",
+    "isNew": false
+  },
+  {
+    "cover_url": "Heroes.png",
+    "category": "Marketing",
+    "section_name": "Hero Sections",
+    "count": 8,
+    "id": "ba30d2fb-f398-4f91-8cfa-e4a84b386841",
+    "slug": "/heroes",
+    "description": "Beautifully designed, fully responsive, expertly crafted hero section examples",
+    "isNew": false
+  },
+  {
+    "slug": "/faqs",
+    "category": "Marketing",
+    "count": 7,
+    "cover_url": "FAQS.png",
+    "id": "6713a1de-e75b-4337-a498-5e078ae0dd02",
+    "section_name": "FAQs",
+    "description": "Beautifully designed, fully responsive, expertly crafted FAQs examples",
+    "isNew": false
+  },
+  {
+    "cover_url": "Feature.png",
+    "id": "8f9ceb0d-94f9-4752-b004-ff6a7a07bb20",
+    "category": "Marketing",
+    "slug": "/feature-sections",
+    "count": 8,
+    "description": "Beautifully designed, fully responsive, expertly crafted feature section examples",
+    "section_name": "Feature Sections",
+    "isNew": false
+  },
+  {
+    "category": "Marketing",
+    "id": "51567610-2a3c-4f04-8f42-55fd5cc89e80",
+    "description": "Beautifully designed, fully responsive, expertly crafted pricing section examples",
+    "slug": "/pricing-sections",
+    "count": 6,
+    "section_name": "Pricing Sections",
+    "cover_url": "Pricing.png",
+    "isNew": false
+  },
+  {
+    "description": "Beautifully designed, fully responsive, expertly crafted navbar examples",
+    "cover_url": "Navbars.png",
+    "count": 7,
+    "id": "c5742778-0905-4876-a5f0-bc9f34b0a1a3",
+    "slug": "/navbars",
+    "category": "Application",
+    "section_name": "Navbars",
+    "isNew": false
+  },
+  {
+    "section_name": "Testimonials",
+    "description": "Beautifully designed, fully responsive, expertly crafted testimonial examples",
+    "category": "Marketing",
+    "cover_url": "Testimonial.png",
+    "count": 6,
+    "id": "bde3a575-1d44-4ecf-b9f6-8c32aa2adecf",
+    "slug": "/testimonials",
+    "isNew": false
+  },
+  {
+    "slug": "/select-menus",
+    "category": "Application",
+    "cover_url": "Select-Menus.png",
+    "section_name": "Select Menus",
+    "description": "Beautifully designed, fully responsive, expertly crafted select menu examples",
+    "count": 7,
+    "id": "eeb98783-a7ee-44e7-b8fb-006bf4421bec",
+    "isNew": false
+  },
+  {
+    "section_name": "Modals",
+    "count": 6,
+    "slug": "/modals",
+    "category": "Application",
+    "id": "0eaf5c08-bc39-4dc9-b27c-c5aea80e4398",
+    "description": "Beautifully designed, fully responsive, expertly crafted modal examples",
+    "cover_url": "Modals.png",
+    "isNew": false
+  },
+  {
+    "cover_url": "Stats.png",
+    "category": "Marketing",
+    "description": "Beautifully designed, fully responsive, expertly crafted stat examples",
+    "slug": "/stats",
+    "id": "985029d3-8f34-4c36-a960-3b00be079226",
+    "count": 6,
+    "section_name": "Stats",
+    "isNew": false
+  },
+  {
+    "count": 7,
+    "cover_url": "Avatars.png",
+    "section_name": "Avatars",
+    "category": "Application",
+    "slug": "/avatars",
+    "description": "Beautifully designed, fully responsive, expertly crafted avatar examples",
+    "id": "a9bb0d6c-5a67-4702-9f0f-973e1c75bfb5",
+    "isNew": false
+  },
+  {
+    "slug": "/newsletters",
+    "category": "Marketing",
+    "count": 6,
+    "section_name": "Newsletter Sections",
+    "description": "Beautifully designed, fully responsive, expertly crafted Newsletter examples",
+    "cover_url": "Newsletter.png",
+    "id": "b2dc2e9c-92af-496b-9ee5-29bd64daa1f4",
+    "isNew": false
+  },
+  {
+    "category": "Application",
+    "slug": "/authentication",
+    "section_name": "Authentication",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c09850d",
+    "cover_url": "Authentication.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted authentication examples",
+    "count": 7,
+    "isNew": false
+  },
+    {
+    "category": "Application",
+    "slug": "/sidebars",
+    "section_name": "Sidebars",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c32457d",
+    "cover_url": "Sidebar.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted sidebar examples",
+    "count": 4,
+    "isNew": true
+  },
+  {
+    "category": "Application",
+    "slug": "/radio-groups",
+    "section_name": "Radio Groups",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c32457d",
+    "cover_url": "Radio.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted Radio Groups examples",
+    "count": 4,
+    "isNew": true
+  },
+    {
+    "category": "Application",
+    "slug": "/context-menus",
+    "section_name": "Context Menu",
+    "id": "65a2da6c-73d9-40ac-b4e1-323c8c32457d",
+    "cover_url": "Context-menu.png",
+    "description": "Beautifully designed, fully responsive, expertly crafted Context Menu examples",
+    "count": 2,
+    "isNew": true
+
+  }
+]

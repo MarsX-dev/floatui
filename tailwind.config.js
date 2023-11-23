@@ -1,15 +1,21 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // Note the addition of the `app` directory.
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./content/**/*.md",
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./package/**/*.{js,ts,jsx,tsx}",
+    "./previewsComponents/**/*.{js,ts,jsx,tsx}",
+    "./examples/**/*.{js,ts,jsx,tsx}",
+    "./viewport/**/*.{js,ts,jsx,tsx}",
+    "./componentsDB/**/*.md",
   ],
   theme: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms")({
+      strategy: "class", // only generate classes
+    }),
+  ],
 };
