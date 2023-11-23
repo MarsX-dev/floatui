@@ -2,12 +2,10 @@ import mergeTW from "utils/mergeTW";
 
 export default ({ className = "" }: { className?: string }) => (
   <svg
-    width="675"
-    height="251"
     viewBox="0 0 675 251"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={mergeTW(className)}
+    className={mergeTW(className, "w-full sm:w-[675px] sm:h-[251px]")}
   >
     <g filter="url(#filter0_f_3289_3080)">
       <path
