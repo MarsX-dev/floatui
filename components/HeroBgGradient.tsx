@@ -8,12 +8,11 @@ export default ({
   height?: number;
 }) => (
   <svg
-    width="653"
     height={height}
     viewBox="0 0 653 444"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className={mergeTW(className)}
+    className={mergeTW(className, "w-full sm:w-[653px] sm:h-auto")}
   >
     <g filter="url(#filter0_f_3249_6957)">
       <path
