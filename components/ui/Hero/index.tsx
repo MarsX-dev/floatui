@@ -29,7 +29,7 @@ export default () => {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3">
           <LinkItem
-            href="/"
+            href="/components"
             variant="shiny"
             className="inline-block w-full hover:bg-zinc-700 sm:w-auto"
           >
