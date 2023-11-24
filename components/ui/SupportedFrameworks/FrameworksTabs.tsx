@@ -24,7 +24,7 @@ export default () => {
       value: "react",
     },
     {
-      name: "Vue.jsX",
+      name: "Vue.js",
       icon: <IconVue />,
       value: "vue",
     },
