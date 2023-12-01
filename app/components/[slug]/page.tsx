@@ -15,6 +15,12 @@ type PageDetails = {
   section_name: string;
 };
 
+export async function generateStaticParams() {
+  return sections.map((item) => ({
+    slug: item.slug.slice(1),
+  }));
+}
+
 export async function generateMetadata({
   params: { slug },
 }: {
@@ -25,6 +31,10 @@ export async function generateMetadata({
   ) as PageDetails;
 
   return {
+    metadataBase: new URL("https://floatui.com"),
+    alternates: {
+      canonical: `/components/${slug}`,
+    },
     title: pageDetails
       ? `${pageDetails.section_name} - Tailwind CSS Components`
       : "Page Not Found",

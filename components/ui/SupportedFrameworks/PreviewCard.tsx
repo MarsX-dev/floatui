@@ -1,7 +1,6 @@
 import { PlusIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Button from "../Button";
-import LinkItem from "../LinkItem";
 
 const members = [
   {

@@ -28,6 +28,10 @@ export async function generateMetadata({
   })[0];
 
   return {
+    metadataBase: new URL("https://floatui.com"),
+    alternates: {
+      canonical: `/templates/${slug}`,
+    },
     title: `Float UI - ${template.template_name} Tailwind CSS Template`,
     description: template.description,
     openGraph: {
@@ -55,6 +59,7 @@ export default async ({ params: { slug } }: { params: Params }) => {
       price,
       description,
       details,
+      templateFile,
     } = item.data();
 
     return {
@@ -66,31 +71,12 @@ export default async ({ params: { slug } }: { params: Params }) => {
       price,
       description,
       details,
+      templateFile,
     };
   })[0];
 
   return (
     <>
-      {/* <PaddleLoader />
-      <Head>
-        <meta name='robots' content='index, follow' />
-        <meta property='og:type' content='article' />
-        <meta name='twitter:description' content={template?.description} />
-        <meta property='og:image' content={template?.banner_url} />
-        <meta name='twitter:image' content={template?.banner_url} />
-        <meta
-          name='twitter:title'
-          content={`${template?.template_name} - Float UI`}
-        />
-        <meta
-          property='og:title'
-          content={`${template?.template_name} - Float UI`}
-        />
-        <meta property='og:description' content={""} />
-        <meta name='description' content={template?.description} />
-        <title>{template?.template_name} - Float UI</title>
-      </Head>
-      <Nav /> */}
       <section className="mt-24">
         <div className="max-w-screen max-w-2xl mx-auto lg:max-w-none">
           <div className="gap-12 lg:flex">
@@ -126,35 +112,14 @@ export default async ({ params: { slug } }: { params: Params }) => {
                     <ArrowTopRightOnSquareIcon className="w-4 h-4 duration-200 group-hover:translate-x-1" />
                   </LinkItem>
                   <LinkItem
-                    href="/"
+                    target="_blank"
+                    href={`https://drive.google.com/u/0/uc?id=${template?.templateFile}`}
                     variant="shiny"
                     className="inline-block w-full hover:bg-zinc-700 sm:w-auto"
                   >
                     Download template
                   </LinkItem>
                 </div>
-                {/* <Link
-                    href='/dashboard/templates'
-                    className='flex items-center justify-center gap-1 py-3 px-4 rounded-lg text-center text-white dark:text-white border-none bg-gray-800 dark:bg-indigo-600 shadow w-full hover:bg-gray-700 dark:hover:bg-indigo-700 sm:w-auto md:py-2.5'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='h-5 w-5'
-                      viewBox='0 0 20 20'
-                      fill='currentColor'>
-                      <path
-                        fillRule='evenodd'
-                        d='M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z'
-                        clipRule='evenodd'
-                      />
-                    </svg>
-                    Download template
-                  </Link>
-                <a
-                  href={template?.preview_url}
-                  target='_blank'
-                  className='flex items-center justify-center gap-1 py-3 px-5 rounded-lg text-center text-gray-800 dark:text-gray-300 duration-150 hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border dark:border-none w-full sm:w-auto md:py-2.5'>
-                  Full preview
-                </a> */}
               </div>
             </div>
           </div>

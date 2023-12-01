@@ -15,7 +15,6 @@ export const metadata = {
   openGraph: {
     title,
     description: desc,
-    url: "https://floatui.com",
   },
   twitter: {
     title,
@@ -63,7 +62,7 @@ export default async () => {
           </div>
           <ul
             id="templates"
-            className="mt-32 space-y-7 divide-y dark:divide-gray-700 gap-14 grid-cols-2 lg:grid lg:space-y-0 lg:divide-y-0"
+            className="mt-32 space-y-7 divide-y divide-zinc-800 gap-14 grid-cols-2 lg:grid lg:space-y-0 lg:divide-y-0"
           >
             {templates.map((item, idx) => (
               <TemplateCard key={idx} item={item as Templates} />

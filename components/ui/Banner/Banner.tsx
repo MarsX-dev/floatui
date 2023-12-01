@@ -1,6 +1,6 @@
 export default () => {
   return (
-    // <div className="bg-orange-600">
+    // <div className="bg-orange-600 relative z-10">
     //   <div className="max-w-screen py-3 items-center gap-x-4 justify-between text-white sm:flex">
     //     <div className="flex items-center">
     //       <img
@@ -8,11 +8,11 @@ export default () => {
     //         alt="PH kitty"
     //         className="w-24"
     //       />
-    //       <p>Support our project: Marketsy AI on Product Hunt now</p>
+    //       <p>Support our project: Float UI on Product Hunt now</p>
     //     </div>
     //     <a
     //       className="px-4 rounded-lg text-sm flex-none inline-block w-full mt-3 py-2 text-center text-orange-600 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 sm:w-auto sm:mt-0 btnshake"
-    //       href="https://www.producthunt.com/posts/marketsy-ai"
+    //       href="https://www.producthunt.com/posts/float-ui-v2"
     //       target="_blank"
     //     >
     //       <div className="flex items-center justify-center gap-x-1 text-sm">
