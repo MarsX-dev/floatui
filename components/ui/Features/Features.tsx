@@ -44,7 +44,7 @@ export default () => {
       </div>
       <ul className="space-y-6 gap-6 mt-8 max-w-7xl mx-auto grid-cols-2 sm:grid lg:grid-cols-3 sm:space-y-0">
         {features.map((item: Feature, key: number) => (
-          <Card icon={item.icon} title={item.title} desc={item.desc} />
+          <Card key={key} icon={item.icon} title={item.title} desc={item.desc} />
         ))}
       </ul>
     </section>
