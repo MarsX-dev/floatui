@@ -51,8 +51,8 @@ export default function FUIFooterWithDescriptionAndTitle() {
                     <ul className="flex flex-wrap items-center gap-4 mt-6 sm:text-sm sm:mt-0">
                         {
                             footerNavs.map((item, idx) => (
-                                <li className="text-gray-800 hover:text-gray-500 duration-150">
-                                    <a key={idx} href={item.href}>
+                                <li key={idx} className="text-gray-800 hover:text-gray-500 duration-150">
+                                    <a  href={item.href}>
                                         {item.name}
                                     </a>
                                 </li>
