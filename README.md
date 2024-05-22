@@ -2,15 +2,22 @@
   <a href="https://floatui.com/" rel="noopener" target="_blank"><img width="200" src="public/logo.svg" alt="Float UI logo"></a>
 </p>
 
-Float UI is collection of modern UI components and website templates built on top of React, and Vue (soon) with Tailwind CSS, the components are beautiful designed, expertly crafted, allow you to build beautiful websites.
+Float UI is a collection of modern UI components and website templates built on top of React, and soon, Vue. With Tailwind CSS, the components are beautifully designed and expertly crafted, allowing you to build beautiful websites.
 
 ## Why Float UI?
 
-First, Float UI is fully free, and open source, you don't need to pay anything to use it, and we are working on it full-time, so we'll keep improving, and adding more UIs, the second thing if you’re working on a large project that requires a high level of UI customization or you find yourself repeating the same UI patterns across projects, consider creating an internal UI library, and in this case Float UI is a great choice. You should definitely use it.
+Float UI is fully free and open source. You don't need to pay anything to use it, and we are working on it full-time, so we'll keep improving and adding more UIs. If you’re working on a large project that requires a high level of UI customization or you find yourself repeating the same UI patterns across projects, consider creating an internal UI library. In this case, Float UI is a great choice. You should definitely use it.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+* You have installed the latest version of npm/yarn/pnpm.
+* You have a `Windows/Linux/Mac` machine.
 
 ## Getting Started
 
-First, install the dependencies we highly recommend using pnpm, and run the development server:
+First, install the dependencies. We highly recommend using pnpm, and run the development server:
 
 ```bash
 npm run dev
@@ -18,7 +25,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
