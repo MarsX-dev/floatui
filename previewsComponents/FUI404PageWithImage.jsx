@@ -12,7 +12,7 @@ export default function FUI404PageWithImage() {
             <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
                 <div className="max-w-lg mx-auto flex-1 flex-row-reverse gap-12 items-center justify-between md:max-w-none md:flex">
                     <div className="flex-1 max-w-lg">
-                        <img src="https://res.cloudinary.com/floatui/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1670873056/undraw_page_not_found_re_e9o6_rm5sxu.jpg" />
+                        <img src="https://raw.githubusercontent.com/sidiDev/remote-assets/ddc5be7e0f83988b8148c61a9341d69ce53decaa/undraw_page_not_found_re_e9o6_rm5sxu.svg" />
                     </div>
                     <div className="mt-12 flex-1 max-w-lg space-y-3 md:mt-0">
                         <h3 className="text-indigo-600 font-semibold">
