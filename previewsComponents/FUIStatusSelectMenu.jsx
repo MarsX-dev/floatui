@@ -36,7 +36,7 @@ export default function FUIStatusSelectMenu() {
     }, [])
 
     return (
-        <div className="relative max-w-xs px-4 mx-auto mt-12 text-base">
+        <div className="max-w-xs px-4 mx-auto m-6">
             <button ref={selectMenuRef} className="flex items-center justify-between gap-2 w-full px-3 py-2 text-gray-500 bg-white border rounded-md shadow-sm cursor-default outline-none focus:border-indigo-600"
                 aria-haspopup="true"
                 aria-expanded="true"

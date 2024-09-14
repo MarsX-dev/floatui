@@ -56,7 +56,7 @@ const SelectItem = React.forwardRef(
 
   return (
       <Select.Root>
-        <div className="w-72 max-w-full mx-auto">
+        <div className="w-72 max-w-full mx-auto m-6">
           <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
             <Select.Value placeholder="Select your job" />
             <Select.Icon className="text-gray-400">
@@ -83,37 +83,37 @@ const SelectItem = React.forwardRef(
               className="w-[var(--radix-select-trigger-width)] mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
             >
               <Select.Viewport className="">
-    <SelectItem value='Software engineer'>
-      Software engineer
-    </SelectItem>
+                <SelectItem value='Software engineer'>
+                  Software engineer
+                </SelectItem>
 
-    <SelectItem value='Project manager'>
-      Project manager
-    </SelectItem>
+                <SelectItem value='Project manager'>
+                  Project manager
+                </SelectItem>
 
-    <SelectItem value='IT manager'>
-      IT manager
-    </SelectItem>
+                <SelectItem value='IT manager'>
+                  IT manager
+                </SelectItem>
 
-    <SelectItem value='UI / UX designer'>
-      UI / UX designer
-    </SelectItem>
+                <SelectItem value='UI / UX designer'>
+                  UI / UX designer
+                </SelectItem>
 
-    <SelectItem value='Full-stack engineer'>
-      Full-stack engineer
-    </SelectItem>
+                <SelectItem value='Full-stack engineer'>
+                  Full-stack engineer
+                </SelectItem>
 
-    <SelectItem value='Front-end enginner'>
-      Front-end enginner
-    </SelectItem>
+                <SelectItem value='Front-end enginner'>
+                  Front-end enginner
+                </SelectItem>
 
-    <SelectItem value='Marketing manager'>
-      Marketing manager
-    </SelectItem>
+                <SelectItem value='Marketing manager'>
+                  Marketing manager
+                </SelectItem>
 
-    <SelectItem value='embded system enginner'>
-      embded system enginner
-    </SelectItem>
+                <SelectItem value='embded system enginner'>
+                  embded system enginner
+                </SelectItem>
 
               </Select.Viewport>
             </Select.Content>
