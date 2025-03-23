@@ -93,88 +93,86 @@ const SelectItem = React.forwardRef(
   ];
 
   return (
-    <div className="m-6">
-      <Select.Root onValueChange={setSelectedItemIdx}>
-        <div className="w-72 max-w-full mx-auto">
-          <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
-            <Select.Value placeholder="Select a member">
-              <div className="flex items-center gap-2 text-gray-500">
-                <IconUser />
-                <div className="flex-1 text-left flex items-center gap-x-1 text-gray-600">
-                  {menuItems[selectedItemIdx].name}
-                  <span>{menuItems[selectedItemIdx].label}</span>
-                </div>
+    <Select.Root onValueChange={setSelectedItemIdx}>
+      <div className="w-72 max-w-full mx-auto m-6">
+        <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
+          <Select.Value placeholder="Select a member">
+            <div className="flex items-center gap-2 text-gray-500">
+              <IconUser />
+              <div className="flex-1 text-left flex items-center gap-x-1 text-gray-600">
+                {menuItems[selectedItemIdx].name}
+                <span>{menuItems[selectedItemIdx].label}</span>
               </div>
-            </Select.Value>
-            <Select.Icon className="text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 9l4-4 4 4m0 6l-4 4-4-4"
-                />
-              </svg>
-            </Select.Icon>
-          </Select.Trigger>
-          <Select.Portal>
-            <Select.Content
-              position="popper"
-              avoidCollisions={false}
-              className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+            </div>
+          </Select.Value>
+          <Select.Icon className="text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <Select.Viewport className="">
-                  <SelectItem value='Danya'>
-                    <IconUser />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Danya
-                      <span className='text-sm'>@danya</span>
-                    </div>
-                  </SelectItem>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+              />
+            </svg>
+          </Select.Icon>
+        </Select.Trigger>
+        <Select.Portal>
+          <Select.Content
+            position="popper"
+            avoidCollisions={false}
+            className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+          >
+            <Select.Viewport className="">
+                <SelectItem value='Danya'>
+                  <IconUser />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Danya
+                    <span className='text-sm'>@danya</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='Osama'>
-                    <IconUser />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Osama
-                      <span className='text-sm'>@osama</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='Osama'>
+                  <IconUser />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Osama
+                    <span className='text-sm'>@osama</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='Loyan'>
-                    <IconUser />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Loyan
-                      <span className='text-sm'>@loyan</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='Loyan'>
+                  <IconUser />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Loyan
+                    <span className='text-sm'>@loyan</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='Carllose'>
-                    <IconUser />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Carllose
-                      <span className='text-sm'>@carllose</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='Carllose'>
+                  <IconUser />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Carllose
+                    <span className='text-sm'>@carllose</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='Micheal'>
-                    <IconUser />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Micheal
-                      <span className='text-sm'>@micheal</span>
-                    </div>
-                  </SelectItem>
-              </Select.Viewport>
-            </Select.Content>
-          </Select.Portal>
-        </div>
-      </Select.Root>
-    </div>
+                <SelectItem value='Micheal'>
+                  <IconUser />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Micheal
+                    <span className='text-sm'>@micheal</span>
+                  </div>
+                </SelectItem>
+            </Select.Viewport>
+          </Select.Content>
+        </Select.Portal>
+      </div>
+    </Select.Root>
   );
 };
 

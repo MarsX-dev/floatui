@@ -76,92 +76,90 @@ const SelectItem = React.forwardRef(
 
 
   return (
-    <div className="m-6">
-      <Select.Root onValueChange={setSelectedItemIdx}>
-        <div className="w-72 max-w-full mx-auto">
-          <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
-            <Select.Value placeholder="Select a member">
-              <div className="flex items-center gap-2">
-                <img
-                  src={menuItems[selectedItemIdx].avatar}
-                  className="w-5 h-5 rounded-full"
-                />
-                <div className="flex-1 text-left flex items-center gap-x-1">
-                  {menuItems[selectedItemIdx].name}
-                  <span>{menuItems[selectedItemIdx].label}</span>
-                </div>
+    <Select.Root onValueChange={setSelectedItemIdx}>
+      <div className="w-72 max-w-full mx-auto m-6">
+        <Select.Trigger className="w-full inline-flex items-center justify-between px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none focus:ring-offset-2 focus:ring-indigo-600 focus:ring-2">
+          <Select.Value placeholder="Select a member">
+            <div className="flex items-center gap-2">
+              <img
+                src={menuItems[selectedItemIdx].avatar}
+                className="w-5 h-5 rounded-full"
+              />
+              <div className="flex-1 text-left flex items-center gap-x-1">
+                {menuItems[selectedItemIdx].name}
+                <span>{menuItems[selectedItemIdx].label}</span>
               </div>
-            </Select.Value>
-            <Select.Icon className="text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 9l4-4 4 4m0 6l-4 4-4-4"
-                />
-              </svg>
-            </Select.Icon>
-          </Select.Trigger>
-          <Select.Portal>
-            <Select.Content
-              position="popper"
-              avoidCollisions={false}
-              className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+            </div>
+          </Select.Value>
+          <Select.Icon className="text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <Select.Viewport className="">
-                  <SelectItem value='0'>
-                    <img src='https://randomuser.me/api/portraits/women/79.jpg' className='w-5 h-5 rounded-full' />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Danya
-                      <span className='text-sm'>@danya</span>
-                    </div>
-                  </SelectItem>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+              />
+            </svg>
+          </Select.Icon>
+        </Select.Trigger>
+        <Select.Portal>
+          <Select.Content
+            position="popper"
+            avoidCollisions={false}
+            className="w-[var(--radix-select-trigger-width)] max-h-64 mt-3 overflow-y-auto bg-white border rounded-lg shadow-sm text-sm"
+          >
+            <Select.Viewport className="">
+                <SelectItem value='0'>
+                  <img src='https://randomuser.me/api/portraits/women/79.jpg' className='w-5 h-5 rounded-full' />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Danya
+                    <span className='text-sm'>@danya</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='1'>
-                    <img src='https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg' className='w-5 h-5 rounded-full' />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Osama
-                      <span className='text-sm'>@osama</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='1'>
+                  <img src='https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg' className='w-5 h-5 rounded-full' />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Osama
+                    <span className='text-sm'>@osama</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='2'>
-                    <img src='https://randomuser.me/api/portraits/men/86.jpg' className='w-5 h-5 rounded-full' />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Loyan
-                      <span className='text-sm'>@loyan</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='2'>
+                  <img src='https://randomuser.me/api/portraits/men/86.jpg' className='w-5 h-5 rounded-full' />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Loyan
+                    <span className='text-sm'>@loyan</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='3'>
-                    <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=a72ca28288878f8404a795f39642a46f' className='w-5 h-5 rounded-full' />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Carllose
-                      <span className='text-sm'>@carllose</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='3'>
+                  <img src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=a72ca28288878f8404a795f39642a46f' className='w-5 h-5 rounded-full' />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Carllose
+                    <span className='text-sm'>@carllose</span>
+                  </div>
+                </SelectItem>
 
-                  <SelectItem value='4'>
-                    <img src='https://randomuser.me/api/portraits/men/46.jpg' className='w-5 h-5 rounded-full' />
-                    <div className='flex-1 text-left flex items-center gap-x-1'>
-                      Micheal
-                      <span className='text-sm'>@micheal</span>
-                    </div>
-                  </SelectItem>
+                <SelectItem value='4'>
+                  <img src='https://randomuser.me/api/portraits/men/46.jpg' className='w-5 h-5 rounded-full' />
+                  <div className='flex-1 text-left flex items-center gap-x-1'>
+                    Micheal
+                    <span className='text-sm'>@micheal</span>
+                  </div>
+                </SelectItem>
 
-              </Select.Viewport>
-            </Select.Content>
-          </Select.Portal>
-        </div>
-      </Select.Root>
-    </div>
+            </Select.Viewport>
+          </Select.Content>
+        </Select.Portal>
+      </div>
+    </Select.Root>
   );
 };
         

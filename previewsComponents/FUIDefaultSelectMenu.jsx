@@ -8,7 +8,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 
 export default function FUIDefaultSelectMenu() {
   return (
-    <div className="relative w-72 max-w-full mx-auto mt-12">
+    <div className="relative w-72 max-w-full mx-auto m-6">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-0 bottom-0 w-5 h-5 my-auto text-gray-400 right-3"
