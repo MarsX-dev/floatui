@@ -85,7 +85,7 @@ export default () => (
       </div>
       <div className="text-sm custom-screen text-center border-t border-zinc-800">
         <div className="text-zinc-300 py-8">
-          &copy; 2023 Float UI. All rights reserved.
+          &copy; 2024 Float UI. All rights reserved.
         </div>
       </div>
     </div>
